@@ -16,7 +16,7 @@ import { UsersModule } from './users/users.module';
       envFilePath: '.env',
       isGlobal: true
     }),
-    MongooseModule.forRoot(process.env.MONGO_OP),
+    MongooseModule.forRoot(process.env.MONGO_URI),
     ProjectsModule,
     FilesModule,
     UsersModule,
