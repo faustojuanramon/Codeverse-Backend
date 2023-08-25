@@ -29,7 +29,8 @@
     "@nestjs/platform-express": "^10.0.0",
     "mongoose": "^7.4.2",
     "reflect-metadata": "^0.1.13",
-    "rxjs": "^7.8.1"
+    "rxjs": "^7.8.1",
+    "vercel": "^32.1.0"
   },
   "devDependencies": {
     "@nestjs/cli": "^10.0.0",
