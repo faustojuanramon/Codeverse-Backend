@@ -8,7 +8,7 @@ async function bootstrap() {
     methods: ["GET","POST","PUT","DELETE","OPTIONS"],
     allowedHeaders: 'Content-Type, Accept',
     exposedHeaders: 'Custom-Header',
-    optionsSuccessStatus: 204,
+    optionsSuccessStatus: 200,
     preflightContinue: false,
     credentials: true
   });
