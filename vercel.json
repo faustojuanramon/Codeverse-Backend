@@ -20,5 +20,16 @@
                 "DELETE"
             ]
         }
+    ],
+    "headers": [
+        {
+            "source": "/(*)",
+            "headers": [
+                {
+                    "key": "Access-Control-Allow-Origin",
+                    "value": "https://codeverse-front.vercel.app/"
+                }
+            ]
+        }
     ]
 }
