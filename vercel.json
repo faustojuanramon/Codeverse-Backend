@@ -5,28 +5,20 @@
     },
     "builds": [
         {
-            "src": "src/main.ts",
+            "src": "dist/main.js",
             "use": "@vercel/node"
         }
     ],
     "routes": [
         {
             "src": "/(.*)",
-            "dest": "src/main.ts",
+            "dest": "dist/main.js",
             "methods": [
                 "GET",
                 "POST",
                 "PUT",
                 "DELETE"
-            ],
-            "headers": {
-                
-                    "Access-Control-Allow-Credentials": "true",
-                    "Access-Control-Allow-Origin": "https://codeverse-front.vercel.app/",
-                    "Access-Control-Allow-Methods": "GET,OPTIONS,PATCH,DELETE,POST,PUT" ,
-                    "Access-Control-Allow-Headers": "X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version"
-                
-            }
+            ]
         }
     ]
 }
